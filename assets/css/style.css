@@ -21,16 +21,19 @@
 .lightMainFont {
   font-family: "Raleway";
   font-weight: 300;
+  font-size: 12px;
 }
 
 .mainFont {
   font-family: "Raleway";
   font-weight: 400;
+  font-size: 14px;
 }
 
 .heavyMainFont {
   font-family: "Raleway";
   font-weight: 700;
+  font-size: 16px;
 }
 
 .startBackground {
@@ -39,7 +42,7 @@
 }
 
 .saathGameDevBackground {
-  background: url("/assets/img/startbg.png") fixed;
+  background: url("/assets/img/startbg.png") no-repeat fixed center;
   height: 100vh;
 }
 
@@ -60,6 +63,62 @@
   margin: 2px;
 }
 
+iframe {
+  display: none;
+  visibility: hidden;
+}
+
 a:hover {
   color: #ffffff;
+}
+
+.saathMainLogo {
+  width: 860px;
+  padding: 32px;
+}
+
+.saathText {
+  width: auto;
+  margin-left: 540px;
+  margin-right: 540px;
+}
+
+@media screen and (max-width: 1600px) {
+  .saathText {
+    width: auto;
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+  
+}
+
+@media screen and (max-width: 990px) {
+  .navbar {
+    display: none;
+    visibility: hidden;
+  }
+  .saathMainLogo {
+    width: 420px;
+    padding: 16px;
+  }
+  .lightMainFont {
+    font-family: "Raleway";
+    font-weight: 300;
+    font-size: 14px;
+  }
+  .mainFont {
+    font-family: "Raleway";
+    font-weight: 400;
+    font-size: 16px;
+  }
+  .heavyMainFont {
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 20px;
+  }
+  .saathText {
+    width: auto;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
 }
